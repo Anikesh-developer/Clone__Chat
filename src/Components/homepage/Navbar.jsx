@@ -21,7 +21,7 @@ const Navbar = () => {
       <div className='user'>
         <img src='https://images.pexels.com/photos/10458386/pexels-photo-10458386.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' alt='' />
         <span>{currentUser.displayName}</span>
-        <Link to='/login'>
+        <Link to='/Clone__Chat/'>
           <button onClick={logout}>Logout</button>
         </Link>
       </div>

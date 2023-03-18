@@ -9,7 +9,7 @@ const App = () => {
     <Router>
       <AuthProvider>
         <Routes>
-          <Route path='/login' element={<Login />}></Route>
+          <Route path='/Clone__Chat/' element={<Login />}></Route>
         </Routes>
         <Routes>
           <Route index element={<Home/>}></Route>
