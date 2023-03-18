@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Clone__Chat/static/css/main.d1cc9bd0.css",
+    "main.js": "/Clone__Chat/static/js/main.df170b84.js",
+    "index.html": "/Clone__Chat/index.html",
+    "main.d1cc9bd0.css.map": "/Clone__Chat/static/css/main.d1cc9bd0.css.map",
+    "main.df170b84.js.map": "/Clone__Chat/static/js/main.df170b84.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1cc9bd0.css",
+    "static/js/main.df170b84.js"
+  ]
+}
