@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: none;
+}
+
+.login__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background:var(--color-text) ;
+    font-weight: bolder;
+    font-size: larger;
+}
+.login__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 60px;
+    background-color: white;
+    gap: 25px;
+    font-family: var(--font-family);
+    background: rgb(255,255,255 , 0.06);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+    border-radius: 30px;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    opacity: 0.8;
+}
+.login__wrapper form {
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+.login__button__google {
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.6);
+    color: var(--color-blog);
+    opacity: 0.8;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgb(255 255 255 / 20%);
+    box-shadow: 3px 3px 5px rgb(31 38 135 / 37%);
+    border-left: 2px solid rgba(255,255,255,.3);
+    border-top: 2px solid rgba(255,255,255,.3);
+    padding: 5px;
+}
+.login-button-facebook {
+    cursor: pointer;
+    outline: none;
+    background: transparent;
+    border: 2px solid rgba(255,255,255,0.6);
+    color: var(--color-blog);
+    opacity: 0.8;
+    border-radius: 20px;
+    text-shadow: 2px 2px 4px rgb(255 255 255 / 20%);
+    box-shadow: 3px 3px 5px rgb(31 38 135 / 37%);
+    border-left: 2px solid rgba(255,255,255,.3);
+    border-top: 2px solid rgba(255,255,255,.3);
+    padding: 5px;
+}
+
+@media screen and (max-width: 750px) {
+    .login__container {
+        font-size: medium;
+    }
+    .login__wrapper {
+        padding: 40px 30px;
+    }
+}
