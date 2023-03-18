@@ -22,7 +22,7 @@ const Home = () => {
   useEffect(() => {
 
     if (!currentUser){
-      navigate('/login')
+      navigate('/Clone__Chat/')
       return;
     }
 

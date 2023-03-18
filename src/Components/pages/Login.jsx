@@ -20,7 +20,7 @@ const Login = () => {
 
   useEffect (() => {
     if(currentUser != null ){
-      navigate('/Clone__Chat/');
+      navigate('/');
       console.log(currentUser)
     }
   },[currentUser])
