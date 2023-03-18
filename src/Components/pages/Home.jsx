@@ -26,9 +26,9 @@ const Home = () => {
       return;
     }
 
-    axios.get('https://api.chatengine.io/users/me', {
+    axios.get('https://api.chatengine.io/users/me/', {
       headers: {
-        "project-id":'555458e2-43f7-4202-ad64-13dd27dea353',
+        "project-id":process.env.REACT_APP_CHAT_ENGINE_ID,
         "user-name" : currentUser.email,
         "user-secret" : currentUser.uid,
       }
@@ -48,15 +48,17 @@ const Home = () => {
   
           axios.post('https://api.chatengine.io/users/', 
             formdata ,
-            {headers:{"private-key":"ee2748e1-cd7b-4dc1-9df0-33b6711e2e70"}}
+            {headers:{"private-key":process.env.REACT_APP_CHAT_ENGINE_KEY}}
           )
           .then(() => setLoading(false))
-          // .catch((error)=> console.log(error))
+          .catch((error)=> console.log(error))
         })
     })   
   }, [currentUser,navigate])
 
-  if (!currentUser) return 'Loading...' ;
+  if (!currentUser) {
+    return 'Loading...' ;
+  }
 
   return (
     <div className='home'>
@@ -64,7 +66,7 @@ const Home = () => {
         <Navbar />
         <ChatEngine 
           height="calc(100vh - 52px)"
-          projectID ="555458e2-43f7-4202-ad64-13dd27dea353"
+          projectID = {process.env.REACT_APP_CHAT_ENGINE_ID}
           userName = {currentUser.email}
           userSecret = {currentUser.uid}
         />

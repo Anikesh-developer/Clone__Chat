@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import {GoogleOutlined , FacebookOutlined} from '@ant-design/icons';
 import { useAuth } from '../../Context/AuthContext';
 import './login.css';
-import { useNavigate } from 'react-router-dom';
+import { Navigate, useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
@@ -23,7 +23,7 @@ const Login = () => {
       navigate('/');
       console.log(currentUser)
     }
-  },[currentUser])
+  },[currentUser,navigate])
 
   return (
     <div className='login__container'>
